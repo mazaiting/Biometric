@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name" translatable="false">FingerTest</string>
+  <string name="btn_verify_open">开启指纹验证</string>
+</resources>

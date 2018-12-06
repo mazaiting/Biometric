@@ -1,0 +1,13 @@
+<resources>
+  <!--<string name="app_name">Biometric</string>-->
+  <string name="biometric_dialog_cancel">取消</string>
+  <string name="biometric_dialog_title">验证</string>
+  <string name="biometric_dialog_subtitle">指纹验证</string>
+  <string name="biometric_dialog_state_normal">指纹传感器</string>
+  <string name="biometric_dialog_state_failed">验证失败，请重试</string>
+  <string name="biometric_dialog_state_error">验证异常，请输入密码</string>
+  <string name="biometric_dialog_state_error_enable_process">验证异常，设置失败</string>
+  <string name="biometric_dialog_state_succeeded">验证成功</string>
+  <string name="biometric_dialog_use_password">使用密码</string>
+  <string name="finger">指纹</string>
+</resources>

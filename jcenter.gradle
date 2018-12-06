@@ -1,0 +1,20 @@
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+  lintOptions {
+    abortOnError false
+  }
+}
+
+publish {
+  repoName="Tool"//仓库名(repoName 如果没有填写，上传的库默认仓库是maven)
+  userOrg = 'mazaiting'      //bintray注册的用户名
+  groupId = 'com.mazaiting'     //compile引用时的第1部分groupId
+  artifactId = 'biometric'     //compile引用时的第2部分项目名
+  publishVersion = '1.0.0'    //compile引用时的第3部分版本号
+  desc = 'This is a Biometric util library.'//d项目描述
+  website = 'https://github.com/mazaiting/Biometric' //github 托管地址
+}
+// -x releaseAndroidJavadocs 不执行此任务
+//gradlew clean build bintrayUpload -PbintrayUser=BINTRAY_USERNAME -PbintrayKey=BINTRAY_KEY -PdryRun=false -x releaseAndroidJavadocs
+
