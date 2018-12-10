@@ -12,7 +12,6 @@ import android.support.annotation.RequiresApi
 import android.util.Base64
 import java.security.spec.ECGenParameterSpec
 import java.security.*
-//import com.mazaiting.log.L
 
 /**
  * 指纹识别

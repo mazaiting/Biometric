@@ -35,5 +35,8 @@ dependencies {
   androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
   
   implementation "com.mazaiting:log:1.0.0"
-  implementation project(path: ':biometric')
+  implementation "com.mazaiting:sp:1.0.0"
+  implementation "com.mazaiting:biometric:1.0.0"
+  
+//  implementation project(path: ':biometric')
 }

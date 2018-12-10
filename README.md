@@ -1,6 +1,13 @@
 # Biometric
 Biometric verify
 
+# 依赖
+```
+  // 必须
+  implementation "com.mazaiting:sp:1.0.0"
+  implementation "com.mazaiting:biometric:1.0.0"
+```
+
 # 使用方法
 ```
 // 定义生物识别管理者
