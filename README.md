@@ -3,9 +3,7 @@ Biometric verify
 
 # 依赖
 ```
-  // 必须
-  implementation "com.mazaiting:sp:1.0.0"
-  implementation "com.mazaiting:biometric:1.0.0"
+  implementation "com.mazaiting:biometric:1.0.1"
 ```
 
 # 使用方法
@@ -19,29 +17,29 @@ mManager?.isBiometricSettingEnable()
 // 设置开启指纹验证
 mManager?.setBiometricSettingEnable(true)
 // 判断是否可用
-if (mManager!!.isBiometricPromptEnable()) {
-    // 验证
-    mManager?.authenticate(object : BiometricPromptManager.OnBiometricIdentifyCallback {
-        override fun onUsePassword() {
-            Toast.makeText(this@MainActivity, "onUsePassword", Toast.LENGTH_SHORT).show()
-        }
-
-        override fun onSucceed() {
-          Toast.makeText(this@MainActivity, "onSucceeded", Toast.LENGTH_SHORT).show()
-        }
-
-        override fun onFailed() {
-          Toast.makeText(this@MainActivity, "onFailed", Toast.LENGTH_SHORT).show()
-        }
-
-        override fun onError(code: Int, result: String) {
-          Toast.makeText(this@MainActivity, "onError", Toast.LENGTH_SHORT).show()
-        }
-
-        override fun onCancel() {
-          Toast.makeText(this@MainActivity, "onCancel", Toast.LENGTH_SHORT).show()
-        }
-    })
+if (mManager.isBiometricPromptEnable()) {
+  // 验证
+  mManager.authenticate(object : OnBiometricIdentifyCallback {
+    override fun onUsePassword() {
+      toast("使用密码")
+    }
+    
+    override fun onSucceed() {
+      toast("成功")
+    }
+    
+    override fun onFailed() {
+      toast("失败")
+    }
+    
+    override fun onError(code: Int, result: String) {
+      toast("$code:$result")
+    }
+    
+    override fun onCancel() {
+      toast("取消")
+    }
+  })
 }
 ```
 

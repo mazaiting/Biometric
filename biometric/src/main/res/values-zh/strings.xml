@@ -1,5 +1,4 @@
 <resources>
-  <!--<string name="app_name">Biometric</string>-->
   <string name="biometric_dialog_cancel">取消</string>
   <string name="biometric_dialog_title">验证</string>
   <string name="biometric_dialog_subtitle">指纹验证</string>
